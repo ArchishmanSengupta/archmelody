@@ -14,7 +14,7 @@ class music(commands.Cog):
   #joining
   async def join(self,ctx):
     if ctx.author.voice is None:
-      await ctx.send("Dude get your a$$ first to the voice chanel!")
+      await ctx.send("You are not in the voice chanel!")
     voice_channel=ctx.author.voice.channel
     if ctx.voice_client is None:
       await voice_channel.connect()
